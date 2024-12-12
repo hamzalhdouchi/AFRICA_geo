@@ -103,4 +103,9 @@ while ($row = mysqli_fetch_assoc($result)) {
         <!-- Ajout des champs pour modification -->
     </form>
 </div>
+<script>
+    function modification() {
+        document.getElementById('modification').classList.toggle('hidden');
+    }
+</script>
 
