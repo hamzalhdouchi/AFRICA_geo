@@ -97,4 +97,10 @@ while ($row = mysqli_fetch_assoc($result)) {
         </button>
     </form>
 </div>
+<div class="w-screen h-screen absolute z-20 bg-opacity-50 hidden bg-black flex justify-center items-center" id="modification">
+    <form method="post" action="./index.php" class="w-[40vw] mb-28 h-[80vh] bg-white bg-no-repeat bg-center bg-cover p-10 rounded-xl shadow-lg">
+        <input type="hidden" value="<?= $qurypaye['id'] ?>" name="id_paye" />
+        <!-- Ajout des champs pour modification -->
+    </form>
+</div>
 
