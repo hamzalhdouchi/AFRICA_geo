@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,4 +21,28 @@
             <li><a href="#" class="text-white hover:text-orange-700">Ville</a></li>
         </ul>
     </div>
-</nav>
+</nav><form action="processPays.php" method="post">
+    <label for="payes">Nom du Pays</label>
+    <input type="text" name="payes" id="payes" required>
+
+    <label for="image">Image</label>
+    <input type="url" name="image" id="image">
+
+    <label for="Lang">Langue</label>
+    <input type="text" name="Lang" id="Lang">
+
+    <label for="food">Meilleure Cuisine</label>
+    <input type="text" name="food" id="food" required>
+
+    <label for="continent">Continent</label>
+    <select name="continent" id="continent">
+        <option value="Africa">Afrique</option>
+        <option value="Europe">Europe</option>
+    </select>
+
+    <label for="popilation">Population</label>
+    <input type="number" name="popilation" id="popilation" required>
+
+    <button type="submit" name="ajouter">Ajouter</button>
+</form>
+
