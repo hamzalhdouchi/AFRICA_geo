@@ -85,4 +85,16 @@ while ($row = mysqli_fetch_assoc($result)) {
         </div>
     </div>
 <?php } ?>
+<div class="flex gap-2 w-full justify-around">
+    <form action="#" method="get">
+        <input type="hidden" value="<?= $row['id']; ?>" name="idd">
+        <button type="submit" name="modifecation" onclick="modification()" class="w-28 inline-flex items-center px-3 py-2 text-sm font-medium text-green-600 bg-white rounded-lg">modifier</button>
+    </form>
+    <form action="" method="post">
+        <input type="hidden" name="id" value="<?= $row['id']; ?>">
+        <button type="submit" name="supprimer" class="w-28 inline-flex items-center px-3 py-2 text-sm font-medium text-green-600 bg-white rounded-lg">
+            Supprimer
+        </button>
+    </form>
+</div>
 
