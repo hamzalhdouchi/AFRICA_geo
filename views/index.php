@@ -1,4 +1,28 @@
 
+<?php
+require '../db/database.php';
+
+if (isset($_POST['ajouter'])) {
+    $namePaye = $_POST['payes'];
+    $imagepath = $_POST['image'];
+    $langage = $_POST['Lang'];
+    $Bestfood = $_POST['food'];
+    $contient = $_POST['continent'];
+    $population = $_POST['popilation'];
+
+    if (!empty($namePaye) && !empty($langage) && !empty($Bestfood) && !empty($contient) && !empty($population)) {
+        $query = mysqli_query($connect, "INSERT INTO paye(name, image ,langue, food, population) VALUES ('$namePaye','$imagepath','$langage', '$Bestfood','$population')");
+        if ($query) {
+            echo "Pays ajouté avec succès.";
+        } else {
+            echo "Erreur lors de l'ajout.";
+        }
+    } else {
+        echo "Tous les champs sont requis.";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
