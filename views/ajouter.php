@@ -108,4 +108,7 @@ while ($row = mysqli_fetch_assoc($result)) {
         document.getElementById('modification').classList.toggle('hidden');
     }
 </script>
+</div>
+</body>
+</html>
 
