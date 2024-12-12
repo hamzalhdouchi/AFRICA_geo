@@ -54,4 +54,9 @@ if (isset($_POST['supprimer'])) {
         </div>
     </div>
 </section>
+<section class="flex flex-col items-center">
+    <div class="w-screen h-20 flex justify-center items-center font-bold text-[32px]">
+        <h1>Pays</h1>
+    </div>
+    <div class="w-[90vw] flex flex-wrap gap-16 justify-center">
 
