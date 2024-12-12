@@ -44,3 +44,14 @@ if (isset($_POST['supprimer'])) {
         </div>
     </div>
 </nav>
+<section>
+    <div class="w-screen h-screen flex justify-center items-center">
+        <div class="bg-[url('./public/img/africa.png')] bg-cover bg-center w-[70vw] h-[70vh] rounded-xl flex justify-center items-center mb-10">
+            <div class="text-[7vw] font-semibold text-center">
+                <h1 class="text-white">Welcome To</h1>
+                <h1 class="text-green-900">AFRICA</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
