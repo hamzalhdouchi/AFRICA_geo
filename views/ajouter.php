@@ -59,4 +59,30 @@ if (isset($_POST['supprimer'])) {
         <h1>Pays</h1>
     </div>
     <div class="w-[90vw] flex flex-wrap gap-16 justify-center">
+    <?php
+while ($row = mysqli_fetch_assoc($result)) {
+?>
+    <div class="max-w-sm bg-green-800 border border-gray-200 rounded-lg shadow w-[23vw]">
+        <div class="w-[22,8vw] h-[29vh] rounded-lg bg-no-repeat object-fill">
+            <a href="./views/villes.php?id=<?= $row['id']; ?>">
+                <img class="rounded-t-lg w-full h-full" src="<?= $row['image']; ?>" alt="Image de <?= $row['name']; ?>">
+            </a>
+        </div>
+        <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-100 dark:text-white"><?= $row['name']; ?></h5>
+            <div class="flex gap-2">
+                <h5 class="text-white font-extrabold font-sans">Population :</h5>
+                <p class="mb-3 text-white font-mono font-bold"><?= $row['population']; ?></p>
+            </div>
+            <div class="flex gap-2">
+                <h5 class="text-white font-extrabold font-sans">Langue :</h5>
+                <p class="mb-3 font-mono font-bold text-white"><?= $row['id']; ?></p>
+            </div>
+            <div class="flex gap-2">
+                <h5 class="text-white font-extrabold font-sans">Continent :</h5>
+                <p class="mb-3 font-mono font-bold text-white"><?= $row['name_continent']; ?></p>
+            </div>
+        </div>
+    </div>
+<?php } ?>
 
