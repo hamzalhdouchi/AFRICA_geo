@@ -77,7 +77,7 @@ require '../db/database.php';
                 WHERE id = '$id'");
 ?>
                    
-<div id="alert-border-3" class="flex items-center p-4 mb-4 text-green-800 border-t-4 border-green-300 bg-green-50 dark:text-green-400 dark:bg-gray-800 dark:border-green-800 absolute w-[50vw] top-20 rounded-lg "  role="alert">
+<div id="alert-border-3" class="flex items-center p-4 mb-4 text-green-800 border-t-4 border-green-300 bg-green-50 dark:text-green-400 dark:bg-gray-800 dark:border-green-800 absolute w-[50vw] top-20 z-50 rounded-lg "  role="alert">
 <svg class="flex-shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
     <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
 </svg>
@@ -160,7 +160,7 @@ require '../db/database.php';
                             ?>
 
                                 <?php foreach($resulte1 as $row) {
-                                    // var_dump($row['choix']) ?>
+                                    ?>
                                     <div class="h-[40vh] w-[24vw]">
                                         <div class="max-w-sm bg-black border bg-opacity-55 border-gray-200 rounded-lg shadow">
                                             <div class="w-[24vw] h-[20vh]  rounded-lg bg-no-repeat object-fill">
@@ -191,7 +191,7 @@ require '../db/database.php';
                                                         <button type="submit" name="modifecation" onclick="modification()" class="w-28 inline-flex items-center px-3 py-2 text-sm font-medium text-black bg-white rounded-lg">modifier</button>
                                                     </form>
                                                     <form action="" method="post">
-                                                        <input type="hidden" name="id" value="<?= $row['ID'] ?>">dy_
+                                                        <input type="hidden" name="id" value="<?= $row['ID'] ?>">
                                                         <button type="submit" name="supprimer" class="w-28 inline-flex items-center px-3 py-2 text-sm font-medium text-black bg-white rounded-lg">
                                                             Supprimer
                                                         </button>
