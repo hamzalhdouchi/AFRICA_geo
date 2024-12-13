@@ -117,4 +117,7 @@ if (isset($_POST['modifer'])) {
         <div class="relative">
             <div class="block rounded-lg text-white shadow-secondary-1 dark:bg-surface-dark">
 
+            <img class="rounded-lg w-[85vw] h-[80vh] mt-6" src=" <?= $qurey['image']; ?>" alt="" />
+
+
 
