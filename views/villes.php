@@ -119,5 +119,8 @@ if (isset($_POST['modifer'])) {
 
             <img class="rounded-lg w-[85vw] h-[80vh] mt-6" src=" <?= $qurey['image']; ?>" alt="" />
 
+            <div class="absolute top-0 p-6">
+    <div class="flex justify-around flex-wrap gap-x-16 gap-y-52 w-[80w] h-[70vh] overflow-y-scroll no-scrollbar">
+
 
 
