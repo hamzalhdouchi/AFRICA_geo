@@ -68,6 +68,22 @@ if (isset($_GET['modifecation'])) {
     }
 }
 ?>
+<?php
+if (isset($_POST['modifer'])) {
+    $id = $quryVille['id_paye'];
+    $nameVille = $_POST['Ville'];
+    $image = $_POST['image'];
+    $Description = $_POST['description'];
+    $population = $_POST['Population'];
+    if (!empty($nameVille) && !empty($image) && !empty($Description) && !empty($population)) {
+        $qury = mysqli_query($connect, "UPDATE ville SET 
+        name = '$nameVille',
+        image = '$image',
+        description = '$Description',
+        population = '$population'
+        WHERE id = '$id'");
+?>
+
 
 
 
