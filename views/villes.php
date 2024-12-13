@@ -169,4 +169,9 @@ if (isset($_POST['modifer'])) {
                 <h5 class="text-white font-extrabold font-sans">Capitale:</h5>
                 <p class="mb-3 font-mono font-bold text-white"><?=$row['choix']; ?></p>
             </div>
+            <form action="#" method="get">
+            <input type="hidden" value="<?= $qurey['id']; ?>" name="id">
+            <input type="hidden" value="<?= $row['ID']; ?>" name="idd">
+            <button type="submit" name="modifecity" class="btn btn-warning">MODIFIER</button>
+        </form>
         
