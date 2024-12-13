@@ -112,5 +112,9 @@ if (isset($_POST['modifer'])) {
 <?php
 }
 
+<div class="w-screen h-screen absolute bg-black bg-opacity-40 flex justify-center ">
+    <div class="w-[85vw] h-[70vh] buttom-0 ">
+        <div class="relative">
+            <div class="block rounded-lg text-white shadow-secondary-1 dark:bg-surface-dark">
 
 
