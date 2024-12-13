@@ -153,3 +153,20 @@ if (isset($_POST['modifer'])) {
                 </a>
             </div>
 
+            <div class="p-5 w-12">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-100 dark:text-white">
+                <?= $row['name']; ?>
+            </h5>
+            <div class="flex gap-2">
+                <h5 class="text-white font-extrabold font-sans">Discription:</h5>
+                <p class="mb-3 font-mono font-bold text-white "><?= $row['description']; ?></p>
+            </div>
+            <div class="flex gap-2">
+                <h5 class="text-white font-extrabold font-sans">population:</h5>
+                <p class="mb-3 font-mono font-bold text-white"><?= $row['population']; ?></p>
+            </div>
+            <div class="flex gap-2">
+                <h5 class="text-white font-extrabold font-sans">Capitale:</h5>
+                <p class="mb-3 font-mono font-bold text-white"><?=$row['choix']; ?></p>
+            </div>
+        
