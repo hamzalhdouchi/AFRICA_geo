@@ -45,6 +45,17 @@ require '../db/database.php';
     </li>
 </ul>
 
+<?php
+$id = $_GET['id'];
+
+if ($id) {
+    $resulte = mysqli_query($connect, "SELECT * FROM paye WHERE id = '$id'");
+    $resulte1 = mysqli_query($connect, "SELECT * FROM ville WHERE id_paye = '$id'");
+
+    $qurey = mysqli_fetch_assoc($resulte);
+    $qurey1 = mysqli_fetch_assoc($resulte1);
+}
+?>
 
 
 
