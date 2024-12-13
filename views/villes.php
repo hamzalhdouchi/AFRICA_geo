@@ -56,6 +56,19 @@ if ($id) {
     $qurey1 = mysqli_fetch_assoc($resulte1);
 }
 ?>
+<?php
+if (isset($_GET['modifecation'])) {
+    $idd = $_GET['idd'];
+
+    if (!empty($idd)) {
+        $result = mysqli_query($connect, "SELECT * FROM `ville` WHERE id=$idd ");
+        $quryVille = mysqli_fetch_assoc($result);
+    } else {
+        echo 'erurre';
+    }
+}
+?>
+
 
 
 
