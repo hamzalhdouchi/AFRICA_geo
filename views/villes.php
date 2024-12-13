@@ -142,4 +142,14 @@ if (isset($_POST['modifer'])) {
     </svg>
 </button>
 </div>
+<?php if (!empty($qurey1)) : 
+    foreach($resulte1 as $row) {
+?>
+    <div class="h-[40vh] w-[24vw]">
+        <div class="max-w-sm bg-black border bg-opacity-55 border-gray-200 rounded-lg shadow">
+            <div class="w-[24vw] h-[20vh] rounded-lg bg-no-repeat object-fill">
+                <a href="./views/villes.php?id=<?= $row['ID']; ?>">
+                    <img class="rounded-t-lg w-full h-full " src="<?= $row['image']; ?>" alt="Image de <?= $row['name']; ?>">
+                </a>
+            </div>
 
