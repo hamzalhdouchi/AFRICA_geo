@@ -36,8 +36,15 @@ require '../db/database.php';
         </a>
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
 
+        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-green-600">
+    <li>
+        <a href="../index.php" class="block py-2 px-3 text-white rounded md:bg-transparent md:p-0 md:hover:text-green-700">Home</a>
+    </li>
+    <li>
+        <a href="./views/AjouterPayeVille.php" class="block py-2 px-3 text-white rounded md:bg-transparent md:p-0 md:hover:text-green-700">Ajouter</a>
+    </li>
+</ul>
 
 
 
 
-        
